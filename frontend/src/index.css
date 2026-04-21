@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: 'Manrope', 'Segoe UI', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --color-bg: #f5efe6;
+  --color-bg-soft: #fcf8f2;
+  --color-surface: rgba(255, 252, 247, 0.88);
+  --color-surface-strong: #fffdf9;
+  --color-border: rgba(30, 53, 61, 0.12);
+  --color-text: #1f2f35;
+  --color-text-soft: #596a70;
+  --color-heading: #10252d;
+  --color-primary: #0d5c63;
+  --color-primary-strong: #09464c;
+  --color-primary-soft: #d9ece9;
+  --color-secondary: #f28f79;
+  --color-secondary-soft: #fde1d8;
+  --shadow-lg: 0 24px 60px rgba(20, 37, 43, 0.12);
+  --shadow-md: 0 16px 36px rgba(20, 37, 43, 0.1);
+  --radius-xl: 32px;
+  --radius-lg: 24px;
+  --radius-md: 18px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--color-text);
+  background:
+    radial-gradient(circle at top left, rgba(242, 143, 121, 0.22), transparent 30%),
+    radial-gradient(circle at top right, rgba(13, 92, 99, 0.18), transparent 25%),
+    linear-gradient(180deg, #fffaf4 0%, var(--color-bg) 58%, #efe5d8 100%);
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--color-primary);
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+main {
+  width: min(1120px, calc(100% - 2rem));
+  margin: 0 auto 4rem;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  color: var(--color-heading);
+  font-family: 'Space Grotesk', 'Manrope', sans-serif;
+  line-height: 1.1;
+}
+
+p {
+  margin: 0;
+}

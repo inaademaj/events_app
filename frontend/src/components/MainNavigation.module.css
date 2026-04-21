@@ -1,0 +1,120 @@
+.header {
+  width: min(1120px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 1.5rem 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.logo {
+  text-decoration: none;
+  color: var(--color-heading);
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.45rem;
+  font-weight: 700;
+}
+
+.brand p {
+  color: var(--color-text-soft);
+  font-size: 0.95rem;
+}
+
+.nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.list {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.45rem;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(14px);
+}
+
+.list a {
+  text-decoration: none;
+  color: var(--color-text-soft);
+  padding: 0.7rem 1rem;
+  border-radius: 999px;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.list a:hover,
+.list a.active,
+.active {
+  color: var(--color-heading);
+  background: var(--color-primary-soft);
+  transform: translateY(-1px);
+}
+
+.authActions {
+  display: flex;
+  align-items: center;
+}
+
+.authLink,
+.logoutButton {
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-strong) 100%);
+  padding: 0.85rem 1.25rem;
+  border-radius: 999px;
+  box-shadow: var(--shadow-md);
+}
+
+.authActive {
+  background: linear-gradient(135deg, var(--color-secondary) 0%, #d77660 100%);
+}
+
+.logoutButton {
+  font: inherit;
+}
+
+@media (max-width: 900px) {
+  .header {
+    justify-content: center;
+  }
+
+  .brand,
+  .nav,
+  .authActions {
+    width: 100%;
+  }
+
+  .brand {
+    align-items: center;
+    text-align: center;
+  }
+
+  .nav {
+    justify-content: center;
+  }
+
+  .authActions {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .list {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 28px;
+  }
+}
